@@ -15,7 +15,7 @@ public class HotelTest {
     @Before
     public void setUp(){
         hotel = new Hotel();
-        bedroom1 = new Bedroom(1, 1, "Single");
+        bedroom1 = new Bedroom(1, 1, "Single", 85.00);
         guest1 = new Guest("Jane Doe");
         booking1 = new Booking(bedroom1, 3 );
     }

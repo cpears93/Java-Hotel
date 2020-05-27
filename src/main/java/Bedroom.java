@@ -6,12 +6,14 @@ public class Bedroom {
     private int capacity;
     private ArrayList<Guest> collectionOfGuests;
     private String type;
+    private double nightlyRate;
 
     public Bedroom(int roomNumber, int capacity, String type, double nightlyRate) {
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.collectionOfGuests = new ArrayList<Guest>();
         this.type = type;
+        this.nightlyRate = nightlyRate;
     }
 
     public int getRoomNumber(){
@@ -39,4 +41,7 @@ public class Bedroom {
         this.collectionOfGuests.remove(index);
     }
 
+    public double getNightlyRate() {
+        return this.nightlyRate;
+    }
 }
