@@ -16,4 +16,8 @@ public class Hotel {
     public void addRoom(Bedroom room) {
         this.collectionOfRooms.add(room);
     }
+
+    public void checkInGuest(Bedroom room, Guest guest) {
+        room.addGuest(guest);
+    }
 }

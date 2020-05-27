@@ -5,13 +5,15 @@ import static org.junit.Assert.assertEquals;
 
 public class HotelTest {
 
-    Hotel hotel;
-    Bedroom bedroom1;
+    private Hotel hotel;
+    private Bedroom bedroom1;
+    private Guest guest1;
 
     @Before
     public void setUp(){
         hotel = new Hotel();
         bedroom1 = new Bedroom(1, 1, "Single");
+        guest1 = new Guest("Jane Doe");
     }
 
     @Test
@@ -25,4 +27,9 @@ public class HotelTest {
         assertEquals(1, hotel.getCollectionSize());
     }
 
+    @Test
+    public void canCheckGuestIn() {
+        hotel.checkInGuest(bedroom1, guest1);
+        assertEquals(1, bedroom1.getCollectionOfGuestSize());
+    }
 }

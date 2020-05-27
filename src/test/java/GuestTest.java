@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class GuestTest {
 
-    Guest guest;
+    private Guest guest;
 
     @Before
     public void setUp() {
