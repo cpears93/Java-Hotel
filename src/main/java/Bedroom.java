@@ -30,4 +30,7 @@ public class Bedroom {
         return this.type;
     }
 
+    public void addGuest(Guest guest) {
+        this.collectionOfGuests.add(guest);
+    }
 }
