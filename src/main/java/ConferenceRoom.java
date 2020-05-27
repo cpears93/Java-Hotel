@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class ConferenceRoom {
 
+    public String name;
     private int capacity;
-    private String name;
     private ArrayList<Guest> collectionOfGuests;
 
     public ConferenceRoom(int capacity, String name) {
@@ -12,4 +12,15 @@ public class ConferenceRoom {
         this.name = name;
     }
 
+    public int getCaoacity() {
+        return this.capacity;
+    }
+
+    public String name() {
+        return this.name;
+    }
+
+    public int getGuestSize() {
+        return this.collectionOfGuests.size();
+    }
 }
