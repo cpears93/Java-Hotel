@@ -20,4 +20,8 @@ public class Hotel {
     public void checkInGuest(Bedroom room, Guest guest) {
         room.addGuest(guest);
     }
+
+    public void checkOutGuest(Bedroom room, Guest guest) {
+        room.removeGuest(guest);
+    }
 }

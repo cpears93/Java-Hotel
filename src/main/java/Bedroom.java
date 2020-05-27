@@ -33,4 +33,9 @@ public class Bedroom {
     public void addGuest(Guest guest) {
         this.collectionOfGuests.add(guest);
     }
+
+    public void removeGuest(Guest guest) {
+        int index = this.collectionOfGuests.indexOf(guest);
+        this.collectionOfGuests.remove(index);
+    }
 }

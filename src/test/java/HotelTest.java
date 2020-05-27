@@ -32,4 +32,11 @@ public class HotelTest {
         hotel.checkInGuest(bedroom1, guest1);
         assertEquals(1, bedroom1.getCollectionOfGuestSize());
     }
+
+    @Test
+    public void canCheckGuestOut() {
+        hotel.checkInGuest(bedroom1, guest1);
+        hotel.checkOutGuest(bedroom1, guest1);
+        assertEquals(0, bedroom1.getCollectionOfGuestSize());
+    }
 }
