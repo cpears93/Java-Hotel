@@ -27,6 +27,13 @@ public class BedroomTest {
         assertEquals("Single", bedroom1.getType());
     }
 
+    @Test
+    public void guestSizeStartsAtZero(){
+        assertEquals(0, bedroom1.getCollectionOfGuestSize());
+    }
+
+
+
 
 
 }
