@@ -7,7 +7,7 @@ public class Bedroom {
     private ArrayList<Guest> collectionOfGuests;
     private String type;
 
-    public Bedroom(int roomNumber, int capacity, String type) {
+    public Bedroom(int roomNumber, int capacity, String type, double nightlyRate) {
         this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.collectionOfGuests = new ArrayList<Guest>();
@@ -38,4 +38,5 @@ public class Bedroom {
         int index = this.collectionOfGuests.indexOf(guest);
         this.collectionOfGuests.remove(index);
     }
+
 }
