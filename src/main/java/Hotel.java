@@ -12,4 +12,8 @@ public class Hotel {
     public int getCollectionSize() {
         return this.collectionOfRooms.size();
     }
+
+    public void addRoom(Bedroom room) {
+        this.collectionOfRooms.add(room);
+    }
 }
