@@ -11,6 +11,7 @@ public class HotelTest {
     private Bedroom bedroom1;
     private Guest guest1;
     private Booking booking1;
+    private DiningRoom diningRoom;
 
     @Before
     public void setUp(){
@@ -18,10 +19,11 @@ public class HotelTest {
         bedroom1 = new Bedroom(1, 1, "Single", 85.00);
         guest1 = new Guest("Jane Doe");
         booking1 = new Booking(bedroom1, 3 );
+        diningRoom = new DiningRoom("Buchanan Suite");
     }
 
     @Test
-    public void canGetRoomCollectionSizeStartsAtZero() {
+    public void roomCollectionSizeStartsAtZero() {
         assertEquals(0, hotel.getCollectionSize());
     }
 
@@ -61,5 +63,15 @@ public class HotelTest {
         assertEquals(1, hotel.getBookingSize());
     }
 
+    @Test
+    public void diningRoomCollectionSizeStartsAtZero() {
+        assertEquals(0, hotel.getDiningRoomSize());
+    }
+
+    @Test
+    public void canAddDiningRoom() {
+        hotel.addDiningRoom(diningRoom);
+        { assertEquals(1, hotel.getDiningRoomSize());}
+    }
 
 }
